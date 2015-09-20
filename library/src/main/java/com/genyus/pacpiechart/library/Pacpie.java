@@ -195,7 +195,7 @@ public class Pacpie extends View implements View.OnTouchListener{
                     Log.d(TAG, "x = " + x);
                     Log.d(TAG, "y = " + y);
 
-                    
+
                     performClick(x, y);
                     handled = true;
                 }
