@@ -22,7 +22,7 @@ Should be compatible with all SDK version (back to 1).
 Preview
 ---
 
-![preview](http://185.14.185.122/github/pacpie_preview.png)
+![preview](http://img15.hostingpics.net/thumbs/mini_229420Capturedcran20150920235603.png)
 
 Usage
 ----
