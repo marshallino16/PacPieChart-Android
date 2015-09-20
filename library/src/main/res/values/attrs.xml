@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PacPieChart">
+
+        <attr name="sliceAntiAlias" format="boolean"/>
+        <attr name="sliceDefaultColor" format="color"/>
+        <attr name="sliceStrokeWidth" format="float"/>
+
+        <attr name="lineAntiAlias" format="boolean" />
+        <attr name="lineDefaultColor" format="color" />
+        <attr name="lineStrokeWidth" format="float" />
+
+        <attr name="activate_rotation" format="boolean"/>
+
+    </declare-styleable>
+
+</resources>

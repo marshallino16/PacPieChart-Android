@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="slice_color">#5243ae</color>
+    <color name="slice_color_2">#ff6c2e</color>
+    <color name="slice_color_3">#398ddc</color>
+    <color name="slice_color_4">#a9ae16</color>
+
+    <color name="default_slice_color">#333333</color>
+    <color name="default_line_color">#EEECEC</color>
+</resources>
