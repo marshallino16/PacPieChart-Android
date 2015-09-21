@@ -1,37 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+    <meta charset="UTF-8">
     <title>Pacpiechart-android by marshallino16</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>Pacpiechart-android</h1>
-        <h2>Pie Chart Android Library </h2>
-        <a href="https://github.com/marshallino16/PacPieChart-Android" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+    <section class="page-header">
+      <h1 class="project-name">Pacpiechart-android</h1>
+      <h2 class="project-tagline">Pie Chart Android Library </h2>
+      <a href="https://github.com/marshallino16/PacPieChart-Android" class="btn">View on GitHub</a>
+      <a href="https://github.com/marshallino16/PacPieChart-Android/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/marshallino16/PacPieChart-Android/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
+    <section class="main-content">
+      <h1>
 <a id="pacpie-chart" class="anchor" href="#pacpie-chart" aria-hidden="true"><span class="octicon octicon-link"></span></a>PacPie Chart</h1>
 
-<p><img src="http://185.14.185.122/github/pacpie.png" alt=""></p>
+<p><img src="http://185.14.185.122/github/pacpie.png" alt="banner"></p>
 
 <p>PacPie is a small library to generate Pie Chart as an ImageView (will be different soon).</p>
 
@@ -40,13 +31,13 @@
 <li>Use your colors for fill &amp; stroke</li>
 <li>Add percents</li>
 <li>Add a background color if needed</li>
-<li>Hide or show pie chart with animation</li>
+<li>Hide or show pie chart with animation (comming soon)</li>
 </ul>
 
 <h2>
 <a id="version" class="anchor" href="#version" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version</h2>
 
-<p>1.0</p>
+<p>1.0.1</p>
 
 <h2>
 <a id="compatibility" class="anchor" href="#compatibility" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compatibility</h2>
@@ -56,87 +47,50 @@
 <h2>
 <a id="preview" class="anchor" href="#preview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preview</h2>
 
-<p><img src="http://185.14.185.122/github/pacpie_preview.png" alt="preview"></p>
+<p><img src="http://img15.hostingpics.net/thumbs/mini_229420Capturedcran20150920235603.png" alt="preview"></p>
 
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
+<p>define pie view in your layout.xml</p>
+
+<div class="highlight highlight-source-java"><pre><span class="pl-k">&lt;</span><span class="pl-smi">com.genyus.pacpiechart.library<span class="pl-k">.</span>Pacpie</span>
+        android<span class="pl-k">:</span>id<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>@+id/pacpieChart<span class="pl-pds">"</span></span>
+        xmlns<span class="pl-k">:</span>pacpie<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+        android<span class="pl-k">:</span>layout_width<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+        android<span class="pl-k">:</span>layout_height<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+        android<span class="pl-k">:</span>padding<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>10dp<span class="pl-pds">"</span></span>
+        pacpie<span class="pl-k">:</span>activate_rotation<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+        pacpie<span class="pl-k">:</span>lineAntiAlias<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+        pacpie<span class="pl-k">:</span>lineDefaultColor<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>@color/default_line_color<span class="pl-pds">"</span></span>
+        pacpie<span class="pl-k">:</span>lineStrokeWidth<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>3.0<span class="pl-pds">"</span></span>
+        pacpie<span class="pl-k">:</span>sliceAntiAlias<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+        pacpie<span class="pl-k">:</span>sliceDefaultColor<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>@color/default_slice_color<span class="pl-pds">"</span></span>
+        pacpie<span class="pl-k">:</span>sliceStrokeWidth<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>0.0<span class="pl-pds">"</span></span><span class="pl-k">/</span><span class="pl-k">&gt;</span></pre></div>
+
 <p>Define your pie slices List</p>
 
-<div class="highlight highlight-java"><pre><span class="pl-st">List&lt;<span class="pl-stj">PieDetailsItem</span>&gt;</span> piedata<span class="pl-k">=</span><span class="pl-k">new</span> <span class="pl-st">ArrayList&lt;<span class="pl-stj">PieDetailsItem</span>&gt;</span>(<span class="pl-c1">0</span>);
-<span class="pl-st">int</span> maxCount<span class="pl-k">=</span><span class="pl-c1">0</span>;
-<span class="pl-st">int</span> itemCount<span class="pl-k">=</span><span class="pl-c1">0</span>;</pre></div>
+<div class="highlight highlight-source-java"><pre><span class="pl-k">List&lt;<span class="pl-smi">PacpieSlice</span>&gt;</span> slices <span class="pl-k">=</span><span class="pl-k">new</span> <span class="pl-k">ArrayList&lt;&gt;</span>();
 
-<p>Create slices (here it's from a custom object named Answer)</p>
+<span class="pl-smi">PacpieSlice</span> slice <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">PacpieSlice</span>();
+slice<span class="pl-k">.</span>count <span class="pl-k">=</span> <span class="pl-c1">30</span>;
+slice<span class="pl-k">.</span>color <span class="pl-k">=</span> <span class="pl-smi">Color</span><span class="pl-k">.</span>parseColor(<span class="pl-s"><span class="pl-pds">"</span>#EEECEC<span class="pl-pds">"</span></span>);
 
-<div class="highlight highlight-java"><pre>
-<span class="pl-c">//increment intem count</span>
-itemCount <span class="pl-k">=</span> answer<span class="pl-k">.</span>getPercent();
+<span class="pl-c">//add slice to the list</span>
+slices<span class="pl-k">.</span>add(item);</pre></div>
 
-<span class="pl-c">//create a slice</span>
-<span class="pl-stj">PieDetailsItem</span> item <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-stj">PieDetailsItem</span>();
-item<span class="pl-k">.</span>count <span class="pl-k">=</span> itemCount;
-item<span class="pl-k">.</span>label <span class="pl-k">=</span> answer<span class="pl-k">.</span>getTextAnswer();
-item<span class="pl-k">.</span>color <span class="pl-k">=</span> <span class="pl-stj">Color</span><span class="pl-k">.</span>parseColor(color);
-piedata<span class="pl-k">.</span>add(item);
-maxCount<span class="pl-k">=</span>maxCount<span class="pl-k">+</span>itemCount;</pre></div>
+<p>And finaly set your slice list</p>
 
-<p>Then, create the pie object</p>
+<div class="highlight highlight-source-java"><pre><span class="pl-smi">Pacpie</span> pacpie <span class="pl-k">=</span> (<span class="pl-smi">Pacpie</span>)findViewById(<span class="pl-smi">R</span><span class="pl-k">.</span>id<span class="pl-k">.</span>pacpieChart);
+pacpie<span class="pl-k">.</span>setValues(generateFakeSlices());</pre></div>
 
-<div class="highlight highlight-java"><pre>pie <span class="pl-k">=</span> (<span class="pl-stj">ImageView</span>)findViewById(<span class="pl-stj">R</span><span class="pl-k">.</span>id<span class="pl-k">.</span>pie);
-<span class="pl-stj">Bitmap</span> mBaggroundImage<span class="pl-k">=</span><span class="pl-stj">Bitmap</span><span class="pl-k">.</span>createBitmap(<span class="pl-c1">200</span>,<span class="pl-c1">200</span>,<span class="pl-stj">Bitmap</span><span class="pl-k">.</span><span class="pl-stj">Config</span><span class="pl-c1"><span class="pl-k">.</span>ARGB_8888</span>);
-<span class="pl-stj">PieChart</span> piechart<span class="pl-k">=</span><span class="pl-k">new</span> <span class="pl-stj">PieChart</span>(<span class="pl-v">this</span>);
-piechart<span class="pl-k">.</span>setLayoutParams(<span class="pl-k">new</span> <span class="pl-stj">LayoutParams</span>(<span class="pl-c1">200</span>,<span class="pl-c1">200</span>));
-piechart<span class="pl-k">.</span>setGeometry(<span class="pl-c1">200</span>, <span class="pl-c1">200</span>, <span class="pl-c1">2</span>, <span class="pl-c1">2</span>, <span class="pl-c1">2</span>, <span class="pl-c1">2</span>, <span class="pl-c1">2130837504</span>);
-piechart<span class="pl-k">.</span>setSkinparams(getResources()<span class="pl-k">.</span>getColor(<span class="pl-stj">android<span class="pl-k">.</span>R</span><span class="pl-k">.</span>color<span class="pl-k">.</span>transparent));
-piechart<span class="pl-k">.</span>setData(piedata, maxCount);
-piechart<span class="pl-k">.</span>invalidate();
-piechart<span class="pl-k">.</span>draw(<span class="pl-k">new</span> <span class="pl-stj">Canvas</span>(mBaggroundImage));
-pie<span class="pl-k">.</span>setImageBitmap(mBaggroundImage);</pre></div>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/marshallino16/PacPieChart-Android">Pacpiechart-android</a> is maintained by <a href="https://github.com/marshallino16">marshallino16</a>.</span>
 
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
-<pre lang="text"><code>The MIT License (MIT)
-
-Copyright (c) 2014 Fernandez Anthony
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-</code></pre>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/marshallino16/PacPieChart-Android/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/marshallino16/PacPieChart-Android/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/marshallino16/PacPieChart-Android"></a> is maintained by <a href="https://github.com/marshallino16">marshallino16</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
+    </section>
 
             <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
