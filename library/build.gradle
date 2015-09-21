@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
 
 android {
     compileSdkVersion 21
@@ -16,6 +19,33 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'Piechart-android'
+
+    publishedGroupId = 'com.genyus.pacpiechart.library'
+    libraryName = 'PacPieChart'
+    artifact = 'Piechart-android'
+
+    libraryDescription = 'A library to create simple pie chart on Android apps.'
+
+    siteUrl = 'https://github.com/marshallino16/PacPieChart-Android'
+    gitUrl = 'https://github.com/marshallino16/PacPieChart-Android.git'
+
+    libraryVersion = '1.0.1'
+
+    developerId = 'marshallino16'
+    developerName = 'Fernandez anthony'
+    developerEmail = 'anthonyfernandez16@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
 }
 
 dependencies {
