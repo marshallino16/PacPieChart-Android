@@ -35,7 +35,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    compile 'com.genyus.pacpiechart.library:1.0.1'
 }
 ```
 
