@@ -41,7 +41,7 @@ dependencies {
 
 2. Define pie view in your layout.xml
 
-```java
+```xml
 <com.genyus.pacpiechart.library.Pacpie
         android:id="@+id/pacpieChart"
         xmlns:pacpie="http://schemas.android.com/apk/res-auto"
