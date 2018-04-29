@@ -1,8 +1,6 @@
 PacPie Chart
 =========
 
-![banner](http://185.14.185.122/github/pacpie.png)
-
 PacPie is a small library to generate Pie Chart as an ImageView (will be different soon).
 
   - Easy customization
